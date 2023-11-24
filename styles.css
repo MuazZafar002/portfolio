@@ -125,3 +125,15 @@
   .inner-table td {
     text-align: center; 
   }
+  .certification {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #certificationlist li {
+    list-style: none;
+    padding: 8px;
+    margin: 5px;
+    background: #eee;
+  }
+  
