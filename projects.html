@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name - Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <main>
+    <section class="projects">
+      <input type="text" id="filterInput" placeholder="Filter by technology...">
+      <ul id="projectList">
+        <li data-tech="C">Phonebook (C)</li>
+        <li data-tech="OOP,C++">Vaccination Management System (OOP,C++)</li>
+        <li data-tech="Assembly">Cryptography (Assembly)</li>
+        <li data-tech="React Native">Restaurant Menu (React Native)</li>
+        <li data-tech="React Native">Farm.21 (React Native)</li>
+        <li data-tech="C# dotnet">Bllod Bank Management System (C#,dotnet)</li>
+        <li data-tech="React-JS Node-JS">Bookme (2.0)  (React-JS,Node-JS)</li>
+        <li data-tech="React-JS Node-JS">Hospital Management System  (React-JS,Node-JS)</li>
+        <li data-tech="Python Ml">Sarcasm detection (python,Ml)</li>
+        <li data-tech="Html Css JavaScript">Sorting Algorithm Visualizer  (Html ,Css, JavaScript)</li>
+        <li data-tech="Html Css JavaScript">Asynchronous Equation Solver  (Html ,Css, JavaScript)</li>
+        <li data-tech="Html Css JavaScript">Portfolio  (Html ,Css, JavaScript)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>20k-0363 &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        Muhammad Muaz Zafar&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Devops Assignment 1</p>
+  </footer>
+
+  <script>
+    // Get the input element and project list
+    const filterInput = document.getElementById('filterInput');
+    const projectList = document.getElementById('projectList').getElementsByTagName('li');
+  
+    // Add event listener for input changes
+    filterInput.addEventListener('keyup', filterProjects);
+  
+    // Function to filter projects based on input
+    function filterProjects() {
+      const filterValue = filterInput.value.toUpperCase(); // Convert input to uppercase for case-insensitive matching
+  
+      // Loop through projects
+      for (let i = 0; i < projectList.length; i++) {
+        const tech = projectList[i].getAttribute('data-tech').toUpperCase(); // Get project technology and convert to uppercase
+  
+        // If input matches project technology, display; otherwise hide
+        if (tech.indexOf(filterValue) > -1) {
+          projectList[i].style.display = '';
+        } else {
+          projectList[i].style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

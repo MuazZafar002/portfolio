@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header,
+  footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  main {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  
+  
+  .intro {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .intro-text {
+    text-align: left;
+    padding-right: 20px; 
+  }
+  
+  .intro-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .projects {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #filterInput {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+  #projectList li {
+    list-style: none;
+    padding: 8px;
+    margin: 5px;
+    background: #eee;
+  }
+  
+ 
+  .education {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .education ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .education li {
+    margin: 5px 0;
+  }
+  .table {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: 50%; 
+    background-color: lightgrey;
+    border: 1px solid black;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid black;
+  }
+  
+  .inner-table {
+    width: 100%;
+  }
+  .inner-table td {
+    text-align: center; 
+  }
